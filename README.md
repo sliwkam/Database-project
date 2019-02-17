@@ -2,7 +2,7 @@
 
 **1.	Description of database functionality**
 
-This database is part of the management system for network of hotels. Consists of tables connected with each other by different 
+This database is part of the management system for a network of hotels. Consists of tables connected with each other by different 
 types of relations. It is used for better hotels work organisation. Includes data for faster and more effective work and communication 
 between employees. The database has many applications. Workers can use it for getting information about hotels’ addresses, 
 customers using hotel services, etc. It can be use for adding new visitors too.
