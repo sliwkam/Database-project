@@ -1,13 +1,17 @@
 use hotel_industry;
 
-
+-- -----------------------------------------------------
+-- Insert into table hotels
+-- -----------------------------------------------------
 INSERT INTO hotels (hotel_name, stars, town, street, ZIP_code, hotel_id)   VALUES ('Mercury', '3', 'Wroclaw','Wyspianskiego','12-345', 1), 
 		('Venus','4','Warszawa','Gorna','23-456', 2), 
         ('Jupiter','3', 'Poznan','Dolna','33-567', 3), 
         ('Amber','4', 'Zakopane', 'Niska','11-222', 4), 
         ('Saturn','3', 'Krakow','Poprzeczna','33-458', 5); 
         
-     
+-- -----------------------------------------------------
+-- Insert into table clients
+-- -----------------------------------------------------    
      INSERT INTO clients (surname, name, client_id, address)  
 VALUES     ('Kowalski', 'Jan', 1,'Kielce, ul.Niska 5' ), 
          ('Wisniewski', 'Tadeusz', 2,'Kielce, ul.Wysoka 7'), 
@@ -22,14 +26,18 @@ VALUES     ('Kowalski', 'Jan', 1,'Kielce, ul.Niska 5' ),
         ('Pacek','Karolina',11,'Lipie ul.Starachowicka 10 '),
         ('Mazurek','Klaudia', 12,'Starachowice, ul.Niska 5'); 
         
-        
+-- -----------------------------------------------------
+-- Insert into table rooms_types
+-- -----------------------------------------------------
         INSERT INTO rooms_types (type_id,type) 
 VALUES     ('ak','Apartament krolewski'), 
         ('ap','Apartament prezydencki'), 
         ('sz','Standard zwykly'), 
         ('sw','Standard wysoki'); 
         
-       
+-- -----------------------------------------------------
+-- Insert into table rooms
+-- -----------------------------------------------------
 	INSERT INTO rooms (room_id,room_price,number_of_places,type_id,hotel_id) Values
      (1,'250.00',2,'sz',3),
      (1,'150.00',1,'ap',1),
@@ -45,7 +53,10 @@ VALUES     ('ak','Apartament krolewski'),
      (1,'150.00',1,'sz',5),
 	 (2,'550.00',3,'ak',5),
 	 (3,'350.00',2,'ap',5);
-     
+	 
+-- -----------------------------------------------------
+-- Insert into table reservations
+-- -----------------------------------------------------
      INSERT INTO reservations (reservation_number, hotel_id, client_id, room_id, arrival_date, departure_date, parking)  
 VALUES   
  (1,1,1 , '1', '2019-01-22', '2019-01-29', 'N'), 
@@ -62,12 +73,17 @@ VALUES
 (12,5, 10, '3', '2019-02-12', '2019-02-21', 'N'), 
 (13,2, 11, '1', '2018-11-15', '2018-11-30 ', 'Y'); 
      
-     
+-- -----------------------------------------------------
+-- Insert into table inhabitants
+-- -----------------------------------------------------     
      INSERT INTO inhabitants (inhabitant_id, reservation_number, client_id, hotel_id, room_id, arrival_date, departure_date)  
 VALUES 
 (1,2,1,5,1, '2018-12-14', '2018-12-31'), 
 (2,4,2,2,2, '2019-01-02', '2019-01-05'), 
 (3,13,3,2,3, '2018-11-15', '2018-11-30'); 
 
+-- -----------------------------------------------------
+-- Insert into table parking
+-- -----------------------------------------------------
 INSERT INTO parking VALUES (1,5);
 
