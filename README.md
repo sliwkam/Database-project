@@ -21,7 +21,7 @@ Contents of tables:
 -	Hotels (includes information about hotels’ names, addresses, number of rooms and number of the star) 
 -	Clients (contains personal information about any customers using hotel services) 
 -	Rooms (defines which rooms are in the hotel, the number of places in room and price for them) 
--	Rooms_types (two elements table which includes information about rooms types
+-	Rooms_types (two elements table which includes information about rooms types); in this table, the primary key was created by two          values: room_id and hotel_id;
 -	Reservations (table with information about every reservation) 
 -	Parking (allocating parking spaces for clients) 
 -	Inhabitants (stores information about people currently living in the hotel)
