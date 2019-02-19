@@ -13,7 +13,7 @@ The database has many applications:
    - creating the view that shows reservations whose arrival date is older than 50 days from the current day
    - removing 'obsolete' reservations
    - displaying the most frequently booked hotels
-and many other which can be created for specific needs. 
+   - and many other which can be created for specific needs. 
 
 **2.	Database design**
 ![alt text]( https://github.com/sliwkam/Database-project/blob/master/ERP.jpg)
